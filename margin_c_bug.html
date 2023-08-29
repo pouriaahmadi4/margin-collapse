@@ -6,3 +6,12 @@
     <title>Margin Collapse</title>
     <link rel="stylesheet" href="margin_c_bug.css" />
   </head>
+  <h3 id="heading">
+    Margin collapsing is a behavior in CSS where the margins of adjacent
+    elements (like boxes) can sometimes combine to form a larger margin.
+    <br />
+    Or in this case two paragraphs are nested in one <em>div</em> element.
+    <br />These two have <code>1rem</code> vertical margin between one
+    another, yet their margin is combined inside their parent margin. This can
+    be solved if we apply min-max margin limitations.
+  </h3>
