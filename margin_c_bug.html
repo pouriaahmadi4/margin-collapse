@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapse</title>
+    <link rel="stylesheet" href="margin_c_bug.css" />
+  </head>
+  <h3 id="heading">
+    Margin collapsing is a behavior in CSS where the margins of adjacent
+    elements (like boxes) can sometimes combine to form a larger margin.
+    <br />
+    Or in this case two paragraphs are nested in one <em>div</em> element.
+    <br />These two have <code>1rem</code> vertical margin between one
+    another, yet their margin is combined inside their parent margin. This can
+    be solved if we apply min-max margin limitations.
+  </h3>
+  <p>The bottom margin of this paragraph is collapsed</p>
+    <p>
+      and is combined with this paragraph's top margin.
+    </p>
+
+    <div>
+      Div parent element has another two paragraphs
+      <p>These are two contents inside their parent (div) <sup>1</sup></p>
+      <p>These are two contents inside their parent (div) <sup>2</sup></p>
+    </div>
+  </body>
+</html>

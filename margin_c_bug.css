@@ -1,0 +1,17 @@
+div {
+    margin: 5rem 2rem;
+    background: rgb(61, 247, 216);
+    border: 5px solid black;
+
+  }
+  
+  p {
+    margin: 1rem 2rem;
+    background: rgb(233, 91, 197);
+    border: dashed rgb(248, 252, 5)
+  }
+  
+  #heading {
+    text-align: center ;
+    color: rgb(121, 243, 7);
+  }
